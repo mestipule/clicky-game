@@ -6,6 +6,7 @@ import images from  './clicky-images.json';
 import Wrapper from './components/Wrapper/wraper';
 import Title from './components/Title/title';
 import Jumbotron from './components/Jumbotron/jumbotron'
+
 import './App.css';
 
 function shuffleImages (array) {
@@ -89,12 +90,14 @@ class App extends Component {
 
      
       <Wrapper>
-      <Jumbotron
-        title = "Clicky-Game"
-        score = {this.state.currentScore}
-        highScore = {this.state.highScore}
-        message = {this.state.message}
-        />
+        <div className="jumbotron">
+          <Jumbotron
+            title = "Clicky-Game"
+            score = {this.state.currentScore}
+            highScore = {this.state.highScore}
+            message = {this.state.message}
+          />
+        </div>
         <Title>
         Click once, to earn points. If you click twice the games restart!
         </Title>
