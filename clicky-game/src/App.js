@@ -91,12 +91,14 @@ class App extends Component {
      
       <Wrapper>
         <div className="jumbotron">
-          <Jumbotron
-            title = "Clicky-Game"
-            score = {this.state.currentScore}
-            highScore = {this.state.highScore}
-            message = {this.state.message}
-          />
+          <div className ="scoreInJumbotron">
+            <Jumbotron
+              title = "Clicky-Game"
+              score = {this.state.currentScore}
+              highScore = {this.state.highScore}
+              message = {this.state.message}
+            />
+          </div>
         </div>
         <Title>
         Click once, to earn points. If you click twice the games restart!
